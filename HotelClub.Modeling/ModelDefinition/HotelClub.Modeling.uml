@@ -1,0 +1,1283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="5f9afcff-2b0c-43aa-92ef-a0a337f71787"
+  name="HotelClub.Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="71b8b51e-a0e2-4975-ba23-454ff8feadd8"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="54c130db-a238-4a5d-83b9-7679b7e0cd3c"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Browser Other Info"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="14b8f765-efe4-42c8-8751-098935c57d32"
+              LastKnownName="Browse Other Info"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8134ad8d-ed16-45c5-8abf-a30673a6be08"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="afb52907-3ae4-4939-9aea-07a9d9e40514"
+                  name="Browser Other Info"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="80c30d52-0dfd-4478-9b76-62e4d7e44bc9"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Broswer Plans"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4d452439-8329-4308-9fa6-581e6222001c"
+              LastKnownName="Browse Payment Info"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8f40a5ab-78fb-42af-94c3-7691668e9ee6"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="31fe3d9f-f7e4-49b1-afd8-0da2be349400"
+                  name="Broswer Plans"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8e099322-2bf7-4816-896d-bf7ee80de91c"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Browser Hotels"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="688a187a-7cc9-4a91-a75f-91dbf8ef59c3"
+              LastKnownName="Browse Hotels"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="80f6aeca-7f2b-4f55-bc4d-4d6a46c5a49c"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c8df686b-c292-4d58-b1ea-266819cb88cf"
+                  name="Browser Hotels"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d35423b8-0065-495e-9554-2221951f9837"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Register"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="66bb0929-9530-4ef9-bf38-b07bf707248e"
+              LastKnownName="Register"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3162fc0b-9301-43e0-a248-7bcd396992ba"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="56af4b4b-bfb9-4244-a6e5-d52199ae185d"
+                  name="Register"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="8c77c313-3c4a-4621-a2d0-6c1a5d615f9e"
+        name="Logged User"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="4bef44ac-4e96-4850-bf02-06cb8c0b0a0f"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="71b8b51e-a0e2-4975-ba23-454ff8feadd8"
+              LastKnownName="User"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="f7d33cbb-683d-4deb-8286-b93a6cf5ed56"
+            isDerived="false"
+            sourceEndRoleName="Logged User"
+            targetEndRoleName="Change Profile"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1edb2938-6d6a-4870-a94b-03c740f3cca9"
+              LastKnownName="Change Profile"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a943140f-9dc4-415e-8803-5ae8f776bd55"
+                  name="Logged User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="402ad923-e89a-441d-bdf7-b572279da07a"
+                  name="Change Profile"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d91498e7-e5f5-4ae2-b9b6-e41c0ebe6aa7"
+            isDerived="false"
+            sourceEndRoleName="Logged User"
+            targetEndRoleName="Pay fee"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="dc1972fb-ebe8-47b6-a485-ba3b744b215d"
+              LastKnownName="Pay fee"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="10ceab8d-b0aa-400f-b5ff-9828d8feacd2"
+                  name="Logged User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1609341c-44df-4216-bbd9-76ca1a6d26a6"
+                  name="Pay fee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e71f86ad-94c4-4452-9534-656a0e3809c8"
+            isDerived="false"
+            sourceEndRoleName="Logged User"
+            targetEndRoleName="Confirm Email"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2bc40f31-2188-41d7-8f1b-5837d4b7fa64"
+              LastKnownName="Confirm Email"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5558ddf2-c2a4-42a3-a966-155f16f6a3f0"
+                  name="Logged User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7022b27b-2853-49ef-8c04-5a3475a1f16a"
+                  name="Confirm Email"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="444e16fb-c8c2-4071-8a00-d8395e126833"
+        name="Mensalist"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="9acf18a3-f430-4863-abc7-8f4d45f6b9ba"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="8c77c313-3c4a-4621-a2d0-6c1a5d615f9e"
+              LastKnownName="Logged User"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="c56a0b69-0057-4253-aec3-232f1ab92c1a"
+            isDerived="false"
+            sourceEndRoleName="Mensalist"
+            targetEndRoleName="Broser Payment History"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ae243fa7-48db-4308-82d4-e3448ab0e7c6"
+              LastKnownName="Browse Payment History"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="108739f1-9065-410b-ab2d-5ecf1ed907a8"
+                  name="Mensalist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d5404eb9-741d-4e5f-85ec-d7ed373b95f6"
+                  name="Broser Payment History"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="39213d91-4d5a-43e0-ba49-43e1a8b2a475"
+            isDerived="false"
+            sourceEndRoleName="Mensalist"
+            targetEndRoleName="Make a reservation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="426f437a-81f8-459f-a774-bbc8d31e8648"
+              LastKnownName="Make a reservation"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="db6514d0-73a4-4545-bc05-4d70b437fdfa"
+                  name="Mensalist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="037ba921-629d-4bfe-8f01-52b195bb1e97"
+                  name="Make a reservation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+        name="HotelClub"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="a7f4ca44-1890-45da-8ebe-6b3bcdb7aa37"
+        name="Admin"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="f8eeb62b-d49b-46a0-bbcf-d4ea51f692fe"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Change User Status"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="32e6e345-430c-4615-9ed9-02d0fc23336f"
+              LastKnownName="Change User Status"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="788c5eca-ea2c-41c8-b479-c5211dced278"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b77da082-1f1b-4457-bf17-1b704de2fd18"
+                  name="Change User Status"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9f7a8652-8fc8-4394-90e1-dd20ae2d15f1"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Broswer Reservations"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="23e130ed-4440-4424-a85c-cc8b940fd36f"
+              LastKnownName="Broswer Reservations"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="afed675b-ea0e-43d3-a891-ccc38f2ccdcf"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a1eb45a8-06f0-4620-8ff2-a657554f0442"
+                  name="Broswer Reservations"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="de58c68e-235e-4a5d-a9cf-b9aaae842e4e"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Maintain Hotels"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7f56a323-3bf8-4421-b6cc-f9ab6f46f113"
+              LastKnownName="Maintain Hotels"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7bd2de6a-4b68-4f8d-8c84-39f00ee51a8d"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2a4612e2-e2db-40f1-b251-8b5ad19a9be5"
+                  name="Maintain Hotels"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8352de7e-57b5-4d7f-b976-7d2317fc0860"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Maintain Fee"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="58600267-8d32-4ab8-95f4-915fb3aea02e"
+              LastKnownName="Maintain Fee"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="693d209d-15b3-4592-b3c8-bd75b7ea339e"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="37df65e2-56b0-40df-83c1-acdb9f5b63ed"
+                  name="Maintain Fee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="688a187a-7cc9-4a91-a75f-91dbf8ef59c3"
+        name="Browse Hotels"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4d452439-8329-4308-9fa6-581e6222001c"
+        name="Browse Payment Info"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="14b8f765-efe4-42c8-8751-098935c57d32"
+        name="Browse Other Info"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1edb2938-6d6a-4870-a94b-03c740f3cca9"
+        name="Change Profile"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dc1972fb-ebe8-47b6-a485-ba3b744b215d"
+        name="Pay fee"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ae243fa7-48db-4308-82d4-e3448ab0e7c6"
+        name="Browse Payment History"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="32e6e345-430c-4615-9ed9-02d0fc23336f"
+        name="Change User Status"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="426f437a-81f8-459f-a774-bbc8d31e8648"
+        name="Make a reservation"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8748e788-d4b2-4666-bd96-a9f06ee2cdfd"
+        name="Change Picture"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="9a8c360f-9577-4202-9048-69cc9c51e333">
+            <useCaseMoniker
+              Id="1edb2938-6d6a-4870-a94b-03c740f3cca9"
+              LastKnownName="Change Profile"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2d03a2c9-47f7-4474-ad58-58af2ea0de74"
+        name="Change Adress"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="fc02bbee-8b16-4c31-8ef8-485e0765e89d">
+            <useCaseMoniker
+              Id="1edb2938-6d6a-4870-a94b-03c740f3cca9"
+              LastKnownName="Change Profile"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2f196b8f-6b74-4ef7-9fe8-fd8fcc20925c"
+        name="Change Password"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="4ea240d6-e260-4040-97c9-75106b47335f">
+            <useCaseMoniker
+              Id="1edb2938-6d6a-4870-a94b-03c740f3cca9"
+              LastKnownName="Change Profile"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c6225651-b20d-41cd-bbb5-fe50745ba732"
+        name="Recieve Confirmation"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="7c1b250b-55e4-48e8-a724-728bf0fcc71d"
+            isDerived="false"
+            sourceEndRoleName="Recieve Confirmation"
+            targetEndRoleName="E-Mail Sender"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="47261675-bb2c-466a-be4f-586ccdad164e"
+              LastKnownName="E-Mail Sender"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8da0bf7d-83f4-4143-a76f-0d2339a827d8"
+                  name="Recieve Confirmation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c025b4cd-6b1b-484b-8059-e2bfdabe3251"
+                  name="E-Mail Sender"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <additions>
+          <include
+            Id="9b086179-0e42-4cf5-8913-596c4a4647f1">
+            <useCaseMoniker
+              Id="dc1972fb-ebe8-47b6-a485-ba3b744b215d"
+              LastKnownName="Pay fee"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+          </include>
+          <include
+            Id="1ad6da3e-7a6c-476b-af42-bae970a7ffe3">
+            <useCaseMoniker
+              Id="426f437a-81f8-459f-a774-bbc8d31e8648"
+              LastKnownName="Make a reservation"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+          </include>
+          <include
+            Id="b64d146a-0aeb-4422-9f58-4588f3623359">
+            <useCaseMoniker
+              Id="24cbe0a6-5e73-4bad-a9f7-ccf317831500"
+              LastKnownName="Cancel reservation"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="66bb0929-9530-4ef9-bf38-b07bf707248e"
+        name="Register"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4c3a4af4-a535-46df-b4c4-a1307a935a9f"
+        name="Recieve a registration confirmation"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="33f956e1-6652-404e-adf5-b1139683d298"
+            isDerived="false"
+            sourceEndRoleName="Recieve a registration confirmation"
+            targetEndRoleName="E-Mail Sender"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="47261675-bb2c-466a-be4f-586ccdad164e"
+              LastKnownName="E-Mail Sender"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3faeb2ba-15e1-4aaa-9da6-73877213cb05"
+                  name="Recieve a registration confirmation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b418e0ab-0324-4b3b-8ae3-e78ed56d1131"
+                  name="E-Mail Sender"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <additions>
+          <include
+            Id="2a81099a-320e-40b0-94a6-7a6b6d3f7b59">
+            <useCaseMoniker
+              Id="66bb0929-9530-4ef9-bf38-b07bf707248e"
+              LastKnownName="Register"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="23e130ed-4440-4424-a85c-cc8b940fd36f"
+        name="Broswer Reservations"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9dac528c-4901-403a-9f7a-82f75a9b52cd"
+        name="Confirm reservations"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="1109b4ad-7779-4f92-bdb5-e772f7929e26">
+            <useCaseMoniker
+              Id="23e130ed-4440-4424-a85c-cc8b940fd36f"
+              LastKnownName="Broswer Reservations"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="82344a75-d589-4b09-8230-2f9e66fc9816"
+        name="Send the confirmation to the mensalist"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="8052d917-452d-4f70-838c-5286f37a778b"
+            isDerived="false"
+            sourceEndRoleName="Send the confirmation to the mensalist"
+            targetEndRoleName="E-Mail Sender"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="47261675-bb2c-466a-be4f-586ccdad164e"
+              LastKnownName="E-Mail Sender"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4b684d33-f04e-43fb-b5de-b0ef95489cf9"
+                  name="Send the confirmation to the mensalist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="56abc9e1-7aab-45f1-99d9-05fcd5c8a493"
+                  name="E-Mail Sender"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <additions>
+          <include
+            Id="e7cc34fd-6285-4252-b144-cdc874bbd3ae">
+            <useCaseMoniker
+              Id="9dac528c-4901-403a-9f7a-82f75a9b52cd"
+              LastKnownName="Confirm reservations"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="24cbe0a6-5e73-4bad-a9f7-ccf317831500"
+        name="Cancel reservation"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="87f81480-24e3-4714-aa3e-144c5d9b7bad">
+            <useCaseMoniker
+              Id="426f437a-81f8-459f-a774-bbc8d31e8648"
+              LastKnownName="Make a reservation"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="47261675-bb2c-466a-be4f-586ccdad164e"
+        name="E-Mail Sender"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7f56a323-3bf8-4421-b6cc-f9ab6f46f113"
+        name="Maintain Hotels"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6c693a22-12a2-4555-9005-de37f00de15b"
+        name="UseCase1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="adfa1c45-11d6-4254-89c0-ce5c2b721bee"
+        name="UseCase2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="58600267-8d32-4ab8-95f4-915fb3aea02e"
+        name="Maintain Fee"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c71b6909-4c0a-4f64-9497-e5fcd04a038c"
+        name="Notify Mensalists of the change"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="b0dd416c-b65d-4bdb-94a5-d8844becf9bd"
+            isDerived="false"
+            sourceEndRoleName="Notify Mensalists of the change"
+            targetEndRoleName="E-Mail Sender"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="47261675-bb2c-466a-be4f-586ccdad164e"
+              LastKnownName="E-Mail Sender"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5ef9798a-9170-40eb-a386-06186fcf4f0b"
+                  name="Notify Mensalists of the change"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="99f4e502-3f58-4431-80cb-74dc70a4e46d"
+                  name="E-Mail Sender"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <extendedCases>
+          <extend
+            Id="18a8b476-e9ab-48c0-948f-e85b2660fd4a">
+            <useCaseMoniker
+              Id="58600267-8d32-4ab8-95f4-915fb3aea02e"
+              LastKnownName="Maintain Fee"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="709844d7-b949-4cc4-b5ec-ddfcac3b8336"
+        name="Change E-Mail"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="93930af7-ca64-4bf3-8829-b20b520622fe">
+            <useCaseMoniker
+              Id="1edb2938-6d6a-4870-a94b-03c740f3cca9"
+              LastKnownName="Change Profile"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="1abb5a12-677b-498e-987b-913ccecee42a">
+            <useCaseMoniker
+              Id="c6225651-b20d-41cd-bbb5-fe50745ba732"
+              LastKnownName="Recieve Confirmation"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2bc40f31-2188-41d7-8f1b-5837d4b7fa64"
+        name="Confirm Email"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="432f9825-3ca2-4816-aab5-34f41fa89c15"
+        name="Change Pictures"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="5c27b04e-7810-48eb-9459-6157a1091b09">
+            <useCaseMoniker
+              Id="7f56a323-3bf8-4421-b6cc-f9ab6f46f113"
+              LastKnownName="Maintain Hotels"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5f14e64a-5200-4729-ada4-a9f734eb420f"
+        name="Block User"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="df0e0b26-8d3b-417b-b166-85777dce1f4f">
+            <useCaseMoniker
+              Id="32e6e345-430c-4615-9ed9-02d0fc23336f"
+              LastKnownName="Change User Status"
+              LastKnownLocation="HotelClub.Modeling.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="5f8b70d2-b16c-4678-adba-1be1e1817225"
+            LastKnownName="HotelClub"
+            LastKnownLocation="HotelClub.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

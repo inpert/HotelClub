@@ -1,0 +1,73 @@
+﻿@model HotelClub.Core.LoginModel
+
+@{
+    ViewBag.Title = "Log in";
+}
+<br />
+<br />
+<p class="lead well well-sm">
+    @Html.ActionLink("Register", "Register") if you don't have an account.
+</p>
+<hgroup class="title">
+    <h2>@ViewBag.Title.</h2>
+</hgroup>
+
+<section id="loginForm">
+    @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+
+        <div class="container">
+            <div class="row input-group">
+                <div class="col-md-4">@Html.LabelFor(m => m.UserName)</div>
+                <div class="col-md-8">
+                    @Html.TextBoxFor(m => m.UserName)
+                    @Html.ValidationMessageFor(m => m.UserName)
+                </div>
+            </div>
+            <div class="row input-group">
+                <div class="col-md-4">@Html.LabelFor(m => m.Password)</div>
+                <div class="col-md-8">
+                    @Html.PasswordFor(m => m.Password)
+                    @Html.ValidationMessageFor(m => m.Password)
+                </div>
+            </div>
+            <div class="row" input-group>
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                    @Html.CheckBoxFor(m => m.RememberMe)
+                    @Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" })
+                </div>
+            </div>
+            
+            <select data-placeholder="Choose a Country..." class="chosen-select" style="width: 350px; " tabindex="-1">
+                <option value=""></option>
+                <option value="Brazil">Brazil</option>
+                <option value="Canada">Canada</option>
+                <option value="United States">United States</option>
+            </select>
+            <input type="submit" value="Log in" class="btn btn-lg" />
+        </div>
+        <br />
+      
+    }
+</section>
+
+@*<section class="social" id="socialLoginForm">
+    <h3>Use another service to log in.</h3>
+    @Html.Action("ExternalLoginsList", new { ReturnUrl = ViewBag.ReturnUrl })
+</section>*@
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $(document).ready(function () {
+            $('input[type=text]').addClass('form-control');
+        });
+        $(document).ready(function () {
+            $('input[type=password]').addClass('form-control');
+        });
+        $(".chosen-select").chosen();
+    </script>
+}

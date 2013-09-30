@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c039faae-daae-4cf1-b116-ebc8af091c76" name="HotelClub" linkedPackageId="5ffc19d1-40fb-411e-900f-1a8a11659c92" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="0c3c03a8-3e3d-4f55-9607-105f8796e7b4" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="71b8b51e-a0e2-4975-ba23-454ff8feadd8" />
+        <targetEnds>
+          <association Id="696f0e99-5184-4e9b-877f-f66602fa022c" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Browser Other Info" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ec10e7ff-e3e9-4744-8a52-19af9906e463" LastKnownName="Browse Other Info" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0db571f5-c384-4242-bff7-bd6f1aa58d69" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8134ad8d-ed16-45c5-8abf-a30673a6be08" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d396e0c0-048b-4b63-b272-9bc94faa4823" name="Browser Other Info" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="afb52907-3ae4-4939-9aea-07a9d9e40514" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="54c130db-a238-4a5d-83b9-7679b7e0cd3c" />
+          </association>
+          <association Id="a68321cc-bd9a-4d39-8a8f-40681e12c12f" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Broswer Plans" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="43b0c74c-dc2e-43a2-83e3-9fe204036b9a" LastKnownName="Browse Payment Info" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3fc1192c-0986-4388-aaa2-5e9a50401229" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8f40a5ab-78fb-42af-94c3-7691668e9ee6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6190158e-7be5-4402-869b-af1ea89ac2af" name="Broswer Plans" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="31fe3d9f-f7e4-49b1-afd8-0da2be349400" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="80c30d52-0dfd-4478-9b76-62e4d7e44bc9" />
+          </association>
+          <association Id="61351ce3-1724-4079-afcd-a49f5ae0f330" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Browser Hotels" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9c3dc843-6443-491e-900d-3cfba2e9b488" LastKnownName="Browse Hotels" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ca612e36-452e-401a-8eab-9a828954699a" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="80f6aeca-7f2b-4f55-bc4d-4d6a46c5a49c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1594602c-910a-4262-adc8-531d44ff6f9a" name="Browser Hotels" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c8df686b-c292-4d58-b1ea-266819cb88cf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8e099322-2bf7-4816-896d-bf7ee80de91c" />
+          </association>
+          <association Id="89884bd9-68e6-4b42-b51b-316596c7ed4f" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Register" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="72479a0c-b7cb-480a-80ad-45fdf3385c2c" LastKnownName="Register" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="de1a7b01-8180-4bed-91f1-84e534bcab4e" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3162fc0b-9301-43e0-a248-7bcd396992ba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c678ca2e-4627-4451-bd75-259d3d10ffe9" name="Register" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="56af4b4b-bfb9-4244-a6e5-d52199ae185d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d35423b8-0065-495e-9554-2221951f9837" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="5e055ca5-1d38-4163-bafb-c627ebbad77c" name="Logged User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8c77c313-3c4a-4621-a2d0-6c1a5d615f9e" />
+        <generalsInternal>
+          <generalization Id="7710a7e9-7e3b-4f5b-b00d-a4767fea7894" isSubstitutable="false">
+            <actorMoniker Id="0c3c03a8-3e3d-4f55-9607-105f8796e7b4" LastKnownName="User" />
+            <elementDefinition Id="4bef44ac-4e96-4850-bf02-06cb8c0b0a0f" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="3d4246db-67a8-450e-a181-e24ec31ad061" isDerived="false" sourceEndRoleName="Logged User" targetEndRoleName="Change Profile" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="eba918d2-1c8d-4149-b154-f19854b8dfb0" LastKnownName="Change Profile" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="891cead6-5a6b-4b92-865a-366e58d73ff6" name="Logged User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a943140f-9dc4-415e-8803-5ae8f776bd55" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0c05f459-b232-4731-b0cf-887631ccff1c" name="Change Profile" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="402ad923-e89a-441d-bdf7-b572279da07a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f7d33cbb-683d-4deb-8286-b93a6cf5ed56" />
+          </association>
+          <association Id="1949aa2f-00c8-4731-90db-b4e10a3f5426" isDerived="false" sourceEndRoleName="Logged User" targetEndRoleName="Pay fee" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8e717db9-7377-4337-8417-3e5ec81ef87a" LastKnownName="Pay fee" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="61908408-5b06-4ae7-8a10-6bb551c8079c" name="Logged User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="10ceab8d-b0aa-400f-b5ff-9828d8feacd2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="701014bd-e20c-4503-93cc-de4805660484" name="Pay fee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1609341c-44df-4216-bbd9-76ca1a6d26a6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d91498e7-e5f5-4ae2-b9b6-e41c0ebe6aa7" />
+          </association>
+          <association Id="26f3f0e8-340f-470e-9de2-2d0b69d1854b" isDerived="false" sourceEndRoleName="Logged User" targetEndRoleName="Confirm Email" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="789ae6fc-48ab-4b01-b92d-0b3b1b8a4268" LastKnownName="Confirm Email" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="196a44f8-1c81-4021-836a-cf4b25cb9951" name="Logged User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5558ddf2-c2a4-42a3-a966-155f16f6a3f0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ed103065-c5b0-43a9-92b7-07b131fdd3fe" name="Confirm Email" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7022b27b-2853-49ef-8c04-5a3475a1f16a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e71f86ad-94c4-4452-9534-656a0e3809c8" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c82ee120-2b09-434d-b1bc-7dd4857a1023" name="Mensalist" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="444e16fb-c8c2-4071-8a00-d8395e126833" />
+        <generalsInternal>
+          <generalization Id="af6c29fb-23cb-41f2-b9df-6038b97ce208" isSubstitutable="false">
+            <actorMoniker Id="5e055ca5-1d38-4163-bafb-c627ebbad77c" LastKnownName="Logged User" />
+            <elementDefinition Id="9acf18a3-f430-4863-abc7-8f4d45f6b9ba" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="cf6575cf-8b29-4731-9f06-2272f1dea9b0" isDerived="false" sourceEndRoleName="Mensalist" targetEndRoleName="Broser Payment History" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="07b81fa4-20dc-407e-ad51-0117d433d94d" LastKnownName="Browse Payment History" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2d3c8cc3-7c71-4105-954b-de8347a9f376" name="Mensalist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="108739f1-9065-410b-ab2d-5ecf1ed907a8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="869a470e-a145-43ad-970b-9fb18894251f" name="Broser Payment History" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d5404eb9-741d-4e5f-85ec-d7ed373b95f6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c56a0b69-0057-4253-aec3-232f1ab92c1a" />
+          </association>
+          <association Id="01f967a6-bcb8-4f96-97a8-fec1729b0c99" isDerived="false" sourceEndRoleName="Mensalist" targetEndRoleName="Make a reservation" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="88dc3da3-ae24-4cad-a143-284ad7761027" LastKnownName="Make a reservation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2443778e-7354-4236-a417-b20b19fd0767" name="Mensalist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="db6514d0-73a4-4545-bc05-4d70b437fdfa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d3fe70ab-ecbf-48d9-b25d-240b48cc79db" name="Make a reservation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="037ba921-629d-4bfe-8f01-52b195bb1e97" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="39213d91-4d5a-43e0-ba49-43e1a8b2a475" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="d56c69f0-9033-4cf9-bab3-be64049af84d" name="HotelClub" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5f8b70d2-b16c-4678-adba-1be1e1817225" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ae5647db-c2c4-4eb4-80e8-635681ff6d62" name="Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a7f4ca44-1890-45da-8ebe-6b3bcdb7aa37" />
+        <targetEnds>
+          <association Id="711730d3-d442-4041-a74c-a901810dbc7c" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Change User Status" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c739cdca-7d31-46c1-806b-8e3327d34c0e" LastKnownName="Change User Status" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b707f401-97fd-4882-8acb-f3ee23a7e071" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="788c5eca-ea2c-41c8-b479-c5211dced278" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f61c3261-aecb-45e6-ac60-59e9fd7f4d1e" name="Change User Status" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b77da082-1f1b-4457-bf17-1b704de2fd18" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f8eeb62b-d49b-46a0-bbcf-d4ea51f692fe" />
+          </association>
+          <association Id="a4f5dde9-0b4d-4ac0-ba3f-9f731d5c177d" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Broswer Reservations" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ce213848-4ed1-4a24-a26d-6520ab7a0342" LastKnownName="Broswer Reservations" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9ad6bd81-3bb9-4d83-b60e-4a3ca7f9a907" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="afed675b-ea0e-43d3-a891-ccc38f2ccdcf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a1a38d2b-522d-4b67-8b07-eefcc4604ab0" name="Broswer Reservations" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a1eb45a8-06f0-4620-8ff2-a657554f0442" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9f7a8652-8fc8-4394-90e1-dd20ae2d15f1" />
+          </association>
+          <association Id="3ed508a4-ddab-4eae-a1a5-96e8501596e4" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Maintain Hotels" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="44165431-02ba-4fb6-8c84-28a2cede2008" LastKnownName="Maintain Hotels" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ead4c8a0-b7fc-4d26-b924-a7a9387bfc1a" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7bd2de6a-4b68-4f8d-8c84-39f00ee51a8d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="65a818a5-f233-46da-8ddf-aabcb15e4ad1" name="Maintain Hotels" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2a4612e2-e2db-40f1-b251-8b5ad19a9be5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="de58c68e-235e-4a5d-a9cf-b9aaae842e4e" />
+          </association>
+          <association Id="1863c1fb-e1b0-4075-b415-0375b2b95bac" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Maintain Fee" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="98f736bd-8bc9-4326-a783-6a173f3e82ec" LastKnownName="Maintain Fee" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b51033ae-0982-4a8c-99ef-41d1b2883bfa" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="693d209d-15b3-4592-b3c8-bd75b7ea339e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eb2b2965-8135-4ae8-84f9-f452ca998660" name="Maintain Fee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="37df65e2-56b0-40df-83c1-acdb9f5b63ed" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8352de7e-57b5-4d7f-b976-7d2317fc0860" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="9c3dc843-6443-491e-900d-3cfba2e9b488" name="Browse Hotels" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="688a187a-7cc9-4a91-a75f-91dbf8ef59c3" />
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="43b0c74c-dc2e-43a2-83e3-9fe204036b9a" name="Browse Payment Info" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4d452439-8329-4308-9fa6-581e6222001c" />
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ec10e7ff-e3e9-4744-8a52-19af9906e463" name="Browse Other Info" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="14b8f765-efe4-42c8-8751-098935c57d32" />
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="eba918d2-1c8d-4149-b154-f19854b8dfb0" name="Change Profile" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1edb2938-6d6a-4870-a94b-03c740f3cca9" />
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="8e717db9-7377-4337-8417-3e5ec81ef87a" name="Pay fee" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dc1972fb-ebe8-47b6-a485-ba3b744b215d" />
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="07b81fa4-20dc-407e-ad51-0117d433d94d" name="Browse Payment History" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae243fa7-48db-4308-82d4-e3448ab0e7c6" />
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c739cdca-7d31-46c1-806b-8e3327d34c0e" name="Change User Status" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="32e6e345-430c-4615-9ed9-02d0fc23336f" />
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="88dc3da3-ae24-4cad-a143-284ad7761027" name="Make a reservation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="426f437a-81f8-459f-a774-bbc8d31e8648" />
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4a838e1a-e2d3-4963-8576-1d32e6448294" name="Change Picture" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8748e788-d4b2-4666-bd96-a9f06ee2cdfd" />
+        <extendedCases>
+          <extend Id="23566940-9f8e-46ed-b1c4-beb0fac51b2a">
+            <useCaseMoniker Id="eba918d2-1c8d-4149-b154-f19854b8dfb0" LastKnownName="Change Profile" />
+            <elementDefinition Id="9a8c360f-9577-4202-9048-69cc9c51e333" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="6db1d08e-3cab-48a1-b43a-9e3f70cf6de6" name="Change Adress" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2d03a2c9-47f7-4474-ad58-58af2ea0de74" />
+        <extendedCases>
+          <extend Id="813508f4-91f3-4e61-8a28-786b04a5458f">
+            <useCaseMoniker Id="eba918d2-1c8d-4149-b154-f19854b8dfb0" LastKnownName="Change Profile" />
+            <elementDefinition Id="fc02bbee-8b16-4c31-8ef8-485e0765e89d" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="1315913d-a488-465f-930f-1ab09c786bad" name="Change Password" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2f196b8f-6b74-4ef7-9fe8-fd8fcc20925c" />
+        <extendedCases>
+          <extend Id="27a153e7-b6ca-4537-85de-577945583f75">
+            <useCaseMoniker Id="eba918d2-1c8d-4149-b154-f19854b8dfb0" LastKnownName="Change Profile" />
+            <elementDefinition Id="4ea240d6-e260-4040-97c9-75106b47335f" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="98d3177f-471a-4cb7-8a21-d541bc06445e" name="Recieve Confirmation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c6225651-b20d-41cd-bbb5-fe50745ba732" />
+        <targetEnds>
+          <association Id="b9192415-dfaa-41f6-89db-2a57618d691b" isDerived="false" sourceEndRoleName="Recieve Confirmation" targetEndRoleName="E-Mail Sender" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="96934566-ab56-4f30-b1a7-c5273517e5e2" LastKnownName="E-Mail Sender" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="abbbc9d5-0aed-4141-9235-734a7bd3adac" name="Recieve Confirmation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8da0bf7d-83f4-4143-a76f-0d2339a827d8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2ad8fa91-e410-4090-b58d-7bcb65e137b7" name="E-Mail Sender" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c025b4cd-6b1b-484b-8059-e2bfdabe3251" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7c1b250b-55e4-48e8-a724-728bf0fcc71d" />
+          </association>
+        </targetEnds>
+        <additions>
+          <include Id="61ca0f3b-fd5d-49e6-aced-4275a665b2d1">
+            <useCaseMoniker Id="8e717db9-7377-4337-8417-3e5ec81ef87a" LastKnownName="Pay fee" />
+            <elementDefinition Id="9b086179-0e42-4cf5-8913-596c4a4647f1" />
+          </include>
+          <include Id="a17ffb3a-2d53-4ad3-b493-d47d8dbca9bf">
+            <useCaseMoniker Id="88dc3da3-ae24-4cad-a143-284ad7761027" LastKnownName="Make a reservation" />
+            <elementDefinition Id="1ad6da3e-7a6c-476b-af42-bae970a7ffe3" />
+          </include>
+          <include Id="1340152b-004e-4a8d-9007-b84d405f022c">
+            <useCaseMoniker Id="494440a6-deaf-4a75-88b2-ec1792a1c433" LastKnownName="Cancel reservation" />
+            <elementDefinition Id="b64d146a-0aeb-4422-9f58-4588f3623359" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="72479a0c-b7cb-480a-80ad-45fdf3385c2c" name="Register" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="66bb0929-9530-4ef9-bf38-b07bf707248e" />
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9fb200ac-7603-48c1-b7e3-ea8aabe71f1c" name="Recieve a registration confirmation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4c3a4af4-a535-46df-b4c4-a1307a935a9f" />
+        <targetEnds>
+          <association Id="adff17f6-a872-46d5-9ebe-33b171391443" isDerived="false" sourceEndRoleName="Recieve a registration confirmation" targetEndRoleName="E-Mail Sender" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="96934566-ab56-4f30-b1a7-c5273517e5e2" LastKnownName="E-Mail Sender" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a240b945-fd26-4795-b5d0-0305b66d0098" name="Recieve a registration confirmation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3faeb2ba-15e1-4aaa-9da6-73877213cb05" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0a54041e-0c71-4afb-924e-97c9dd345f78" name="E-Mail Sender" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b418e0ab-0324-4b3b-8ae3-e78ed56d1131" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="33f956e1-6652-404e-adf5-b1139683d298" />
+          </association>
+        </targetEnds>
+        <additions>
+          <include Id="97d83605-b14d-4598-831d-4e860000b61b">
+            <useCaseMoniker Id="72479a0c-b7cb-480a-80ad-45fdf3385c2c" LastKnownName="Register" />
+            <elementDefinition Id="2a81099a-320e-40b0-94a6-7a6b6d3f7b59" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ce213848-4ed1-4a24-a26d-6520ab7a0342" name="Broswer Reservations" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="23e130ed-4440-4424-a85c-cc8b940fd36f" />
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="6df5b4c9-7f11-4e59-bb76-46cb0f8b77a1" name="Confirm reservations" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9dac528c-4901-403a-9f7a-82f75a9b52cd" />
+        <extendedCases>
+          <extend Id="209b0794-53b0-4e47-8a27-82fa1c964f9b">
+            <useCaseMoniker Id="ce213848-4ed1-4a24-a26d-6520ab7a0342" LastKnownName="Broswer Reservations" />
+            <elementDefinition Id="1109b4ad-7779-4f92-bdb5-e772f7929e26" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="20bc23fa-75ee-40e8-872a-06e8ad30b6a5" name="Send the confirmation to the mensalist" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="82344a75-d589-4b09-8230-2f9e66fc9816" />
+        <targetEnds>
+          <association Id="3ef9ea7d-f2be-4d24-9bd7-8fc6276551bb" isDerived="false" sourceEndRoleName="Send the confirmation to the mensalist" targetEndRoleName="E-Mail Sender" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="96934566-ab56-4f30-b1a7-c5273517e5e2" LastKnownName="E-Mail Sender" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dc47d0e9-ba00-4fa2-84ce-2255e1066a75" name="Send the confirmation to the mensalist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4b684d33-f04e-43fb-b5de-b0ef95489cf9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="da435f27-cd54-40fa-9be7-b998ef4fddad" name="E-Mail Sender" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="56abc9e1-7aab-45f1-99d9-05fcd5c8a493" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8052d917-452d-4f70-838c-5286f37a778b" />
+          </association>
+        </targetEnds>
+        <additions>
+          <include Id="518008f0-dc83-4973-9452-629f56d96cc0">
+            <useCaseMoniker Id="6df5b4c9-7f11-4e59-bb76-46cb0f8b77a1" LastKnownName="Confirm reservations" />
+            <elementDefinition Id="e7cc34fd-6285-4252-b144-cdc874bbd3ae" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="494440a6-deaf-4a75-88b2-ec1792a1c433" name="Cancel reservation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="24cbe0a6-5e73-4bad-a9f7-ccf317831500" />
+        <extendedCases>
+          <extend Id="3441657f-42ee-4295-adcc-a1e6ec80c989">
+            <useCaseMoniker Id="88dc3da3-ae24-4cad-a143-284ad7761027" LastKnownName="Make a reservation" />
+            <elementDefinition Id="87f81480-24e3-4714-aa3e-144c5d9b7bad" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="96934566-ab56-4f30-b1a7-c5273517e5e2" name="E-Mail Sender" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="47261675-bb2c-466a-be4f-586ccdad164e" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="44165431-02ba-4fb6-8c84-28a2cede2008" name="Maintain Hotels" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7f56a323-3bf8-4421-b6cc-f9ab6f46f113" />
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="98f736bd-8bc9-4326-a783-6a173f3e82ec" name="Maintain Fee" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="58600267-8d32-4ab8-95f4-915fb3aea02e" />
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c4de9a16-5399-412f-b7f7-751857cf91c9" name="Notify Mensalists of the change" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c71b6909-4c0a-4f64-9497-e5fcd04a038c" />
+        <targetEnds>
+          <association Id="0d19e890-399f-4af3-80c8-f2ac4b6f635f" isDerived="false" sourceEndRoleName="Notify Mensalists of the change" targetEndRoleName="E-Mail Sender" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="96934566-ab56-4f30-b1a7-c5273517e5e2" LastKnownName="E-Mail Sender" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fe3bf9de-45f7-4c91-88d9-65ad69197fb0" name="Notify Mensalists of the change" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5ef9798a-9170-40eb-a386-06186fcf4f0b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="688241a0-9d8a-466d-832a-132d97599e1f" name="E-Mail Sender" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="99f4e502-3f58-4431-80cb-74dc70a4e46d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b0dd416c-b65d-4bdb-94a5-d8844becf9bd" />
+          </association>
+        </targetEnds>
+        <extendedCases>
+          <extend Id="f3c89a74-9d07-4657-b7ca-55c7dd313deb">
+            <useCaseMoniker Id="98f736bd-8bc9-4326-a783-6a173f3e82ec" LastKnownName="Maintain Fee" />
+            <elementDefinition Id="18a8b476-e9ab-48c0-948f-e85b2660fd4a" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="7137547d-2dc7-497f-8f9d-641180036819" name="Change E-Mail" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="709844d7-b949-4cc4-b5ec-ddfcac3b8336" />
+        <extendedCases>
+          <extend Id="1cf76e08-9337-4299-ae02-b16ff2c8711e">
+            <useCaseMoniker Id="eba918d2-1c8d-4149-b154-f19854b8dfb0" LastKnownName="Change Profile" />
+            <elementDefinition Id="93930af7-ca64-4bf3-8829-b20b520622fe" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include Id="05840ef5-931e-448d-a953-5e856d60850a">
+            <useCaseMoniker Id="98d3177f-471a-4cb7-8a21-d541bc06445e" LastKnownName="Recieve Confirmation" />
+            <elementDefinition Id="1abb5a12-677b-498e-987b-913ccecee42a" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="789ae6fc-48ab-4b01-b92d-0b3b1b8a4268" name="Confirm Email" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2bc40f31-2188-41d7-8f1b-5837d4b7fa64" />
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ce48d6fc-4bd3-435d-b1d9-3875a597d910" name="Change Pictures" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="432f9825-3ca2-4816-aab5-34f41fa89c15" />
+        <extendedCases>
+          <extend Id="5eff6ff7-0d3c-4e60-ace5-c122cf2d6628">
+            <useCaseMoniker Id="44165431-02ba-4fb6-8c84-28a2cede2008" LastKnownName="Maintain Hotels" />
+            <elementDefinition Id="5c27b04e-7810-48eb-9459-6157a1091b09" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f947a4a2-5600-4ec4-8392-706b32bd2e34" name="Block User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5f14e64a-5200-4729-ada4-a9f734eb420f" />
+        <extendedCases>
+          <extend Id="0a1075af-b508-4ab1-a7f5-32941fec6ed6">
+            <useCaseMoniker Id="c739cdca-7d31-46c1-806b-8e3327d34c0e" LastKnownName="Change User Status" />
+            <elementDefinition Id="df0e0b26-8d3b-417b-b166-85777dce1f4f" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d56c69f0-9033-4cf9-bab3-be64049af84d" LastKnownName="HotelClub" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="5ffc19d1-40fb-411e-900f-1a8a11659c92" name="HotelClub.Modeling">
+    <elementDefinition Id="5f9afcff-2b0c-43aa-92ef-a0a337f71787" />
+    <profileInstances>
+      <packageHasProfileInstances Id="21ffd6ee-6058-4aa7-861c-0230f4f5daca">
+        <profileInstance Id="4021539a-6a2b-455a-bdc9-2129ef4c91c0" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="53dc5e63-32ef-4381-adc4-6c416e5d3f3a">
+        <profileInstance Id="9ae86fa5-d338-41a9-923f-bd39e6ca5f2b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

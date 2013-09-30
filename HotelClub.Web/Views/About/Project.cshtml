@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Title = "Project";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+    <div class="jumbotron">
+        <h2>Project's Idea:</h2>
+        <h4>We will allow Guests to <b>pay monthly</b> for the benefit of <b>booking</b> in hotels with a <b>great discount</b>.
+        </h4>
+    </div>
+    <small>Use case diagram</small>
+    <div class="container">
+        <img src="~/img/useCase.png" />
+    </div>
+
+    <h3>Tools and Techniques:</h3>
+    <ul>
+        <li>Test driven development</li>
+        <li>Integration testes</li>
+        <li>Object Oriented Programming</li>
+        <li>Entity Framework</li>
+        <li>Bootstrap</li>
+        <li>Knockout</li>
+        <li>jQuery</li>
+        <li>Chosen-jQuery</li>
+        <li>Documentation</li>
+    </ul>
+
+    <p class="comment">Our repository is at <a href="https://github.com/ecmcamara/hotelclub">GitHub</a></p>
+
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <span style="padding-left: 7px">Things that are already implemented: </span>
+            <span class="pull-left glyphicon glyphicon-ok">
+                @*.glyphicon .glyphicon-screenshot*@
+            </span>
+
+        </div>
+        <div class="panel-body">
+            <ol>
+                <li>Generic Repository</li>
+                <li>Unit and Integration tests for the Generic Repository</li>
+                <li>WebApis to use Customer Repository - <small>you may use it with <a href="http://fiddler2.com/" target="_blank"> Fiddler</a></small> </li>
+                <li>Entity Framework - Code first</li>
+                <li>Boostrap as you can see
+                    <span class="glyphicon glyphicon-heart-empty"></span>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="panel panel-danger">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true" style="margin: 10px">&times;</button>
+        <div class="panel-heading">
+            <span style="padding-left: 7px">Attention </span>
+            <span class="pull-left glyphicon glyphicon-ban-circle"></span>
+
+        </div>
+        <div class="panel-body">
+            <p>If you would like to run this application, please make sure you change the connection string at the related projects </p>
+            <ol>
+                <li>App.Config at HotelClub.RepositoryTest under Test/Integration</li>
+                <li>Web.Config at HotelClub.Web</li>
+            </ol>
+
+            <small>Current configuration for the connectionString:</small>
+            <pre>
+                    <code >
+< add name="HotelClubDatabase" connectionString="Data Source=(LocalDb)\v11.0;Initial Catalog=HotelClub;Integrated Security=SSPI;AttachDBFilename=E:\OfficialProjects\hotel\HotelMensal\HotelClub.Web\App_Data\HotelClub.mdf" providerName="System.Data.SqlClient" />
+                    </code>
+                </pre>
+            <small class="label label-info">Sorry: We'll be migrating the connection string to the Config class, so this process won't be required in a near future.</small>
+        </div>
+    </div>
+    <h3></h3>
