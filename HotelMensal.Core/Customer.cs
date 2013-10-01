@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -33,14 +32,5 @@ namespace HotelClub.Core
         {
             Address.Add(myAddress);
         }
-    }
-
-    public class Fee
-    {
-        public int Id { get; set; }
-        public Customer Customer { get; set; }
-        public decimal Ammount { get; set; }
-        public DateTime Reference { get; set; }
-        public DateTime PayedDate { get; set; }
     }
 }
