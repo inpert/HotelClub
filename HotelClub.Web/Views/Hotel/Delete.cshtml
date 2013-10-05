@@ -1,0 +1,31 @@
+﻿@model HotelClub.Core.Hotel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h3>Are you sure you want to delete @Html.DisplayFor(model => model.Name)?</h3>
+<fieldset>
+    <legend></legend>
+
+    <span class="table">
+         @Html.DisplayNameFor(model => model.CreatedOn)
+    </span>
+    <div class="table">
+        @Html.DisplayFor(model => model.CreatedOn)
+    </div>
+
+    <span class="table">
+         @Html.DisplayNameFor(model => model.ModifiedOn)
+    </span>
+    <div class="table   ">
+        @Html.DisplayFor(model => model.ModifiedOn)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" class="btn btn-xs btn-danger"/>
+        @Html.ActionLink("Back to List", "Index", null, new {@class="btn btn-xs btn-default"})
+    </p>
+}

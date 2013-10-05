@@ -23,6 +23,7 @@ using HotelClub.Repository;
 using HotelClub.Interface;
 using HotelClub.Web.Data;
 using StructureMap;
+
 namespace HotelClub.Web.DependencyResolution {
     public static class IoC {
         public static IContainer Initialize() {
@@ -33,7 +34,7 @@ namespace HotelClub.Web.DependencyResolution {
                                         scan.TheCallingAssembly();
                                         scan.WithDefaultConventions();
                                         scan.AssemblyContainingType<MainContext>();             // Data
-                                        scan.AssemblyContainingType<Repository<object>>();      // Repository
+                                        scan.AssemblyContainingType<Repository<BaseDataModel>>();      // Repository
                                         scan.AssemblyContainingType<UserProfile>();             // Core
                                     });
                             x.For<IRepository<Customer>>().Singleton().Use<Repository<Customer>>();

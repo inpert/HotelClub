@@ -1,0 +1,54 @@
+﻿@model HotelClub.Core.Hotel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create a new Hotel</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend></legend>
+
+        <div>
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="table">
+            @Html.EditorFor(model => model.Name, null, null, new { @id = "form-control" })
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+        <div class="table">
+            @if (ViewBag.ErrorMessage != null)
+            {
+                <div class="alert alert-warning alert-dismissable col-lg-7">
+                    <strong>@ViewBag.ErrorMessage</strong>
+                </div>
+            
+            }
+        </div>
+        <div class="table">
+            @Html.EditorFor(model => model.Name, null, null, new { @id = "datepicker" })
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+        <div class="row col-lg-7">
+            <input type="submit" value="Create" class="btn btn-xs btn-success " />
+            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-xs btn-default" })
+        </div>
+
+    </fieldset>
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $(document).ready(function () {
+            $('input[type=text]').addClass('form-control');
+            $("#datepicker").datepicker();
+        });
+    </script>
+}

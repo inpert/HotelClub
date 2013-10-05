@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="IAdressRepository.cs" />
     <Compile Include="IApplicationUnit.cs" />
+    <Compile Include="IBaseDataModel.cs" />
     <Compile Include="IClientRepository.cs" />
     <Compile Include="IContext.cs" />
     <Compile Include="IFeeRepository.cs" />

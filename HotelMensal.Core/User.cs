@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity;
-using System.Globalization;
 using System.Web.Mvc;
 
 namespace HotelClub.Core
@@ -26,7 +18,6 @@ namespace HotelClub.Core
         [Required]
         [Display(Name = "User name")]
         public string UserName { get; set; }
-
         public string ExternalLoginData { get; set; }
     }
 

@@ -52,13 +52,19 @@
       <Project>{e1c635cf-793c-4f39-bdf3-70e5918f096b}</Project>
       <Name>HotelClub.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HotelMensal.Core\HotelClub.Core.csproj">
+      <Project>{99f704e4-65a1-4151-a5c3-bca61e385d46}</Project>
+      <Name>HotelClub.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HotelMensal.Interface\HotelClub.Interface.csproj">
       <Project>{9c66b738-0775-42ed-ab1c-6ee451f68109}</Project>
       <Name>HotelClub.Interface</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

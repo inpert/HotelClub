@@ -81,5 +81,10 @@ namespace HotelClub.RepositoryUnitTest.Fakes
         {
             
         }
+
+        public void Dispose()
+        {
+            
+        }
     }
 }

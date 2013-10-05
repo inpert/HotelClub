@@ -395,7 +395,9 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Scripts\lib\underscore.min.map" />
     <Content Include="Views\Profile\Index.cshtml" />
     <Content Include="Views\Hotel\Index.cshtml" />
@@ -403,6 +405,10 @@
     <Content Include="Views\About\Author.cshtml" />
     <Content Include="Views\About\Project.cshtml" />
     <Content Include="Views\Account\RegisterNow.cshtml" />
+    <Content Include="Views\Hotel\Details.cshtml" />
+    <Content Include="Views\Hotel\Create.cshtml" />
+    <Content Include="Views\Hotel\Edit.cshtml" />
+    <Content Include="Views\Hotel\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

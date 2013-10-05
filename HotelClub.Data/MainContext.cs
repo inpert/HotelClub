@@ -8,13 +8,19 @@ using HotelClub.Interface;
 
 namespace HotelClub.Data
 {
-    public class MainContext : BaseContext<MainContext>
+    public class MainContext : DbContext
+        //BaseContext<MainContext>
     {
-        public DbSet<Customer> Clients { get; set; }
-        public DbSet<Address> Adresses { get; set; }
-        public DbSet<Fee> Fees { get; set; }
-        public DbSet<Hotel> Hotels { get; set; }
-        public DbSet<UserProfile> UserProfiles { get; set; }
-        public DbSet<Country> Countries { get; set; }
+        public MainContext()
+            : base("name=HotelClubDatabase")
+        {
+            
+        }
+        public virtual DbSet<Customer> Clients { get; set; }
+        public virtual DbSet<Address> Adresses { get; set; }
+        public virtual DbSet<Fee> Fees { get; set; }
+        public virtual DbSet<Hotel> Hotels { get; set; }
+        public virtual DbSet<UserProfile> UserProfiles { get; set; }
+        public virtual DbSet<Country> Countries { get; set; }
     }
 }

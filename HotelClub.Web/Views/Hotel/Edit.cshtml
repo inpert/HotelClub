@@ -1,0 +1,46 @@
+﻿@model HotelClub.Core.Hotel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend></legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="table">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="table" >
+            @Html.EditorFor(model => model.Name, null, new {@class = "form-control"})
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+         @if (ViewBag.ErrorMessage != null)
+        {
+            <div class="alert alert-warning alert-dismissable">
+              <strong> @ViewBag.ErrorMessage</strong>
+            </div>
+        }
+        <br/>
+        <p>
+            <input type="submit" value="Save" class="btn btn-xs btn-success" />
+            @Html.ActionLink("Back to List", "Index", null, new {@class = "btn btn-xs btn-default"})
+        </p>
+    </fieldset>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+ <script>
+        $(document).ready(function () {
+            $('input[type=text]').addClass('form-control');
+        });
+    </script>
+}

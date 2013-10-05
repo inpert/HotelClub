@@ -6,7 +6,7 @@ using System.Text;
 
 namespace HotelClub.Data
 {
-    public class BaseContext  <TContext> : DbContext where TContext : DbContext
+    public class BaseContext <TContext> : DbContext where TContext : DbContext
     {
         static BaseContext()
         {

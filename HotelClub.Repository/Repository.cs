@@ -6,10 +6,11 @@ using System.Linq;
 using System.Linq.Expressions;
 using HotelClub.Data;
 using HotelClub.Interface;
+using HotelClub.Core;
 
 namespace HotelClub.Repository
 {
-    public class Repository<T> : IRepository<T> where T : class
+    public class Repository<T> : IRepository<T> where T : BaseDataModel
     {
         private readonly DbContext _context;
 
@@ -50,11 +51,15 @@ namespace HotelClub.Repository
         public void Add(T entity)
         {
             _context.Set<T>().Add(entity);
+            entity.ModifiedOn = DateTime.UtcNow;
+            entity.CreatedOn = DateTime.UtcNow;
         }
 
         public void Update(T entity)
         {
-            _context.Entry(entity).State = System.Data.EntityState.Modified;
+            if (_context.Entry(entity).State != EntityState.Detached)
+                _context.Entry(entity).State = System.Data.EntityState.Modified;
+            entity.ModifiedOn = DateTime.UtcNow;
         }
 
         public void Remove(int id)
@@ -74,7 +79,12 @@ namespace HotelClub.Repository
 
         public void Detach(T entity)
         {
-            this._context.Entry(entity).State = EntityState.Detached;
+            //this._context.Entry(entity).State = EntityState.Detached;
+        }
+
+        public void Dispose()
+        {
+            //_context.Dispose();
         }
     }
 }

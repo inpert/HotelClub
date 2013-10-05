@@ -1,0 +1,30 @@
+﻿@model HotelClub.Core.Hotel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details of @Html.DisplayFor(model => model.Name)</h2>
+
+<fieldset>
+    <legend></legend>
+    
+    <span>
+         @Html.DisplayNameFor(model => model.CreatedOn)
+    </span>
+    <div class="table">
+        @Html.DisplayFor(model => model.CreatedOn)
+    </div>
+
+    <span>
+         @Html.DisplayNameFor(model => model.ModifiedOn)
+    </span>
+    <div class="table">
+        @Html.DisplayFor(model => model.ModifiedOn)
+    </div>
+        
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }, new {@class = "btn btn-xs btn-warning"}) 
+    @Html.ActionLink("Back to List", "Index",null, new {@class = "btn btn-xs btn-default"})
+</p>

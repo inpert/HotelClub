@@ -2,7 +2,7 @@
 
 namespace HotelClub.Core
 {
-    public class Fee
+    public class Fee : BaseDataModel
     {
         public int Id { get; set; }
         public Customer Customer { get; set; }

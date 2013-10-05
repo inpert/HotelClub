@@ -15,5 +15,6 @@ namespace HotelClub.Interface
         void Remove(T entity);
         void Save();
         void Detach(T entity);
+        void Dispose();
     }
 }
